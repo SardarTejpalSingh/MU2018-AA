@@ -1,5 +1,5 @@
 var swiper = new Swiper('.swiper-container', {
-  slidesPerView: 1,
+  slidesPerView: 4,
   spaceBetween: 0,
   mousewheel: true,
   breakpoints: {
