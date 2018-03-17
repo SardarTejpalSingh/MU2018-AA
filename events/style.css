@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300');
+
+.swiper-container {
+    background-color: #333;
+}
+
+.swiper-slide {
+  background-size: cover !important;
+}
+
+.heading {
+  width: 100%;
+  background-color: rgba(0,0,0,0.7);
+  color: white;
+  font-size: 30px;
+  padding: 2em 0;
+  margin-top: 80%;
+}
+
+.flip-container {
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -o-perspective: 1000;
+  perspective: 1000;
+
+}
+
+    .flip-container:hover .flipper,
+  .flip-container.hover .flipper {
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+    }
+
+.flip-container, .flipper, .front, .back {
+    width: 100%;
+    height: 100%;
+}
+
+.flipper {
+    -webkit-transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+
+    -moz-transition: 0.6s;
+    -moz-transform-style: preserve-3d;
+
+  -o-transition: 0.6s;
+    -o-transform-style: preserve-3d;
+
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+}
+
+.front, .back {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.front {
+    /* background: url(http://davidwalsh.name/demo/dwflip.jpg) 0 0 no-repeat; */
+  background-size: cover;
+    z-index: 2;
+}
+
+.back {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+
+  background-color: rgba(0,0,0,0.7);
+  color: white;
+}
+
+.front .name {
+    font-size: 2em;
+    display: inline-block;
+    background: rgba(33, 33, 33, 0.8);
+    color: white;
+  width: 100%;
+  top: 70%;
+  font-family: Open Sans Condensed, sans-serif;
+  padding: 1em 0;
+    position: relative;
+}
+
+.back-title {
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: Open Sans Condensed, sans-serif;
+    font-size: 2em;
+}
+
+.back-text.small {
+    bottom: 150px;
+}
+
+.back-text.very-small {
+    bottom: 230px;
+}
+
+.back p, .back-text {
+    position: absolute;
+    color: #fff;
+    bottom: 70px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 0 40px;
+    font-family: Open Sans Condensed, sans-serif;
+    font-weight: normal;
+    line-height: 2em;
+}
+
+.back footer {
+    font-size: 1.1em;
+    display: inline-block;
+    background: rgba(33, 33, 33, 0.8);
+    color: white;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    font-family: Open Sans Condensed, sans-serif;
+    padding: 1em 0;
+    position: absolute;
+}
+
+.link {
+    display: block;
+}
+
+.link-span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+}
+
+.swiper-slide a {
+    display: block;
+}
